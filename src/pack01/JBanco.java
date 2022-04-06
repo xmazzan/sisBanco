@@ -188,40 +188,6 @@ public class JBanco extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnOKActionPerformed
 
-  private void btnOKActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnOKActionPerformed
-    int op = cbOp.getSelectedIndex();
-    int conta = cbConta.getSelectedIndex();
-    double quantia = Double.parseDouble(txtValor.getText());
-
-    DecimalFormat frmtReais = new DecimalFormat();
-    frmtReais.setMaximumFractionDigits(2);
-
-    switch (conta) {
-      case 0:
-        switch (op) {
-          case 0:
-            st.Sacar(quantia);
-            break;
-          case 1:
-            st.Depositar(quantia);
-            break;
-        }
-        lblSaldo.setText("Novo saldo:  R$ " + frmtReais.format(st.saldo));
-        break;
-      case 1:
-        switch (op) {
-          case 0:
-            bb.Sacar(quantia);
-            break;
-          case 1:
-            bb.Depositar(quantia);
-            break;
-        }
-        lblSaldo.setText("Novo saldo:  R$ " + frmtReais.format(bb.saldo));
-        break;
-    }
-  }// GEN-LAST:event_btnOKActionPerformed
-
   /**
    * @param args the command line arguments
    */
