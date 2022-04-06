@@ -17,7 +17,7 @@ public class JBanco extends javax.swing.JFrame {
      */
     public JBanco() {
         initComponents();
-      
+        
         bb.codigo = 1;
         bb.conta = 1014;
         bb.agencia = 1514;
@@ -153,8 +153,6 @@ public class JBanco extends javax.swing.JFrame {
         int op = cbOp.getSelectedIndex();
         int conta = cbConta.getSelectedIndex();
         double quantia = Double.parseDouble(txtValor.getText());
-        double taxaSaque0 = st.taxaSaque;
-        double taxaSaque1 = bb.taxaSaque;
                 
         DecimalFormat frmtReais = new DecimalFormat();
         frmtReais.setMaximumFractionDigits(2);
