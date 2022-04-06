@@ -16,8 +16,7 @@ public class Banco {
     public int agencia;
     public String tipo;
     public double saldo;
-    public double taxaSaque;
-
+    public double taxaSaque = this.taxaSaque;
 
     public double Depositar(double valor){
         this.saldo += valor;
