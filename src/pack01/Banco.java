@@ -18,13 +18,13 @@ public class Banco {
     public String tipo;
     public double saldo;
     public double taxaSaque;
-    
-    
+
+
     public double Depositar(double valor){
         this.saldo += valor;
         return this.saldo;
     }
-    
+
     public double Sacar(double valor){
         double dif = this.saldo - valor - this.taxaSaque;
         if(this.saldo < valor || dif < 0){
@@ -35,7 +35,7 @@ public class Banco {
                 this.saldo -= this.taxaSaque;
             }
             this.saldo -= valor;
-            return this.saldo;    
+            return this.saldo;
         }
     }
 }
