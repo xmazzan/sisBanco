@@ -3,8 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+<<<<<<< HEAD
             <file>file:/X:/Tudo/Codando/Geral/java-banco/sisBanco/src/pack01/JBanco.java</file>
             <file>file:/X:/Tudo/Codando/Geral/java-banco/sisBanco/src/pack01/Banco.java</file>
+=======
+            <file>file:/C:/Users/gabs/Documents/NetBeansProjects/POO-Gabs/src/pack01/JBanco.java</file>
+            <file>file:/C:/Users/gabs/Documents/NetBeansProjects/POO-Gabs/src/pack01/Banco.java</file>
+>>>>>>> a8cc6f0d4e78fd388607f29be9fe9921f96079cf
         </group>
     </open-files>
 </project-private>

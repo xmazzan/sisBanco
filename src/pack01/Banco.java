@@ -5,6 +5,7 @@
 package pack01;
 
 import javax.swing.JOptionPane;
+import static javax.swing.JOptionPane.WARNING_MESSAGE;
 
 /**
  *
@@ -26,7 +27,7 @@ public class Banco {
     public double Sacar(double valor){
         double dif = this.saldo - valor - this.taxaSaque;
         if(this.saldo < valor || dif < 0){
-            JOptionPane.showMessageDialog(null,"Erro ao sacar");
+            JOptionPane.showMessageDialog(null,"Erro ao sacar. Você não tem saldo suficiente. (Consultar taxas de saque)","Saldo insuficiente",WARNING_MESSAGE);
             return 0;
         }else {
             if(this.tipo.equals("Corrente")){
